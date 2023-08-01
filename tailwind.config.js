@@ -28,6 +28,9 @@ module.exports = {
           main: "#B32C2B",
           secondary: "#EC6861",
         },
+        gray: {
+          white: "#FCFCFD"
+        }
       },
     },
   },

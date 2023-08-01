@@ -9,7 +9,7 @@ export default function Navbar() {
   const [showDrawerSide, setShowDrawerSide] = React.useState(false);
 
   return (
-    <nav className="shadow-1 fixed z-50 h-20 w-full bg-white">
+    <nav className="shadow-1 fixed z-50 h-20 w-full bg-white shadow-lg">
       <div className="flex h-full items-center justify-between px-4 md:px-12">
         <div className="flex cursor-pointer items-center">
           <img

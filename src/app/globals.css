@@ -7,9 +7,57 @@ body {
 }
 
 .badge-navbar-1 {
-  @apply mx-4 cursor-pointer px-2 py-1 hover:rounded-lg hover:bg-orange-main;
+  @apply mx-4 cursor-pointer px-2 py-1 hover:rounded-lg hover:bg-orange-main hover:text-white;
 }
 
 .badge-navbar-2 {
-  @apply border-b border-gray-200 px-2 py-3 text-xl hover:rounded-lg hover:bg-orange-main;
+  @apply cursor-pointer border-b border-gray-200 px-2 py-3 text-xl hover:rounded-lg hover:bg-orange-main hover:text-white;
+}
+
+.contact-input {
+  @apply rounded-sm border border-orange-secondary bg-white px-6 py-4 text-black-main placeholder-gray-400 outline-none transition-all hover:border-orange-main focus:border-orange-main focus:text-orange-main;
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 50px white inset;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  object-fit: cover;
+}
+
+.shadow-footer {
+  --tw-shadow: 0px -1px 2px rgba(16, 24, 40, 0.05);
+  --tw-shadow-colored: 0px -1px 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.swiper {
+  width: 100% !important;
+  padding: 0 150px !important;
+}
+
+.swiper-slide {
+  background-position: center !important;
+  background-size: cover !important;
+  height: 300px !important;
+}
+
+.swiper-slide img {
+  display: block !important;
+  width: 100% !important;
+}
+
+.swiper-slide-shadow-right,
+.swiper-slide-shadow-left {
+  background-image: none !important;
 }

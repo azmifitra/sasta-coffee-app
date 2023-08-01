@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-black-main;
+}
+
+.badge-navbar-1 {
+  @apply mx-4 cursor-pointer px-2 py-1 hover:rounded-lg hover:bg-orange-main;
+}
+
+.badge-navbar-2 {
+  @apply border-b border-gray-200 px-2 py-3 text-xl hover:rounded-lg hover:bg-orange-main;
+}

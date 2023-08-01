@@ -18,6 +18,10 @@ body {
   @apply rounded-sm border border-orange-secondary bg-white px-6 py-4 text-black-main placeholder-gray-400 outline-none transition-all hover:border-orange-main focus:border-orange-main focus:text-orange-main;
 }
 
+.button-main {
+  @apply flex h-11 flex-shrink-0 items-center justify-center rounded-md bg-orange-main py-2 text-lg font-medium text-white hover:opacity-80 disabled:cursor-not-allowed disabled:bg-[#cccccc] disabled:font-normal disabled:text-[#666666] disabled:opacity-30;
+}
+
 input:-webkit-autofill {
   background-color: transparent !important;
   -webkit-box-shadow: 0 0 0 50px white inset;
@@ -39,25 +43,4 @@ input:-webkit-autofill {
   --tw-shadow-colored: 0px -1px 2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.swiper {
-  width: 100% !important;
-  padding: 0 150px !important;
-}
-
-.swiper-slide {
-  background-position: center !important;
-  background-size: cover !important;
-  height: 300px !important;
-}
-
-.swiper-slide img {
-  display: block !important;
-  width: 100% !important;
-}
-
-.swiper-slide-shadow-right,
-.swiper-slide-shadow-left {
-  background-image: none !important;
 }

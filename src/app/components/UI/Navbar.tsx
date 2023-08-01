@@ -17,7 +17,7 @@ export default function Navbar() {
             alt="logo-sasta-coffee"
             className="h-16"
           />
-          <span className="mx-2 mt-1 text-xl font-bold text-orange-main md:mx-2">
+          <span className="mx-2 mt-1 text-lg font-bold text-orange-main md:mx-2 md:text-xl">
             Sasta Coffee
           </span>
         </div>

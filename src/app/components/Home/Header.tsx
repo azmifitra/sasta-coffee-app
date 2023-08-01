@@ -1,9 +1,11 @@
 export default function Header() {
   return (
-    <div className="flex min-h-screen w-full items-center justify-end bg-[url('assets/images/coffee-hand-hero.jpg')] bg-cover bg-no-repeat p-24">
-      <div className="flex w-[65%] flex-col items-end">
-        <h1 className="mb-5 text-6xl font-bold">Sasta Coffee Indonesia</h1>
-        <h3 className="text-justify text-lg leading-tight">
+    <div className="flex min-h-[640px] w-full items-center bg-[url('assets/images/coffee-hand-hero.jpg')] bg-center bg-no-repeat p-6 md:min-h-screen md:justify-end md:bg-cover md:px-12 md:py-24">
+      <div className="flex flex-col md:w-[65%] md:items-end">
+        <h1 className="mb-5 text-4xl font-semibold md:text-6xl md:font-bold">
+          Sasta Coffee Indonesia
+        </h1>
+        <h3 className="text-justify text-sm leading-tight md:text-lg md:leading-5">
           As a prominent coffee producer in Indonesia, we take immense pride in
           presenting to you the exquisite flavors and aromas that our diverse
           nation has to offer. <br />

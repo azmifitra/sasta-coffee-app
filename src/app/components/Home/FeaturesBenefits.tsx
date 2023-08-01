@@ -2,11 +2,13 @@ import Image from "next/image";
 
 export default function FeaturesBenefits() {
   return (
-    <div className="flex min-h-screen w-full flex-col justify-between px-12 py-20">
-      <div className="mb-10 flex">
-        <div className="w-1/2">
-          <h2 className="mb-2 text-5xl font-bold">Features</h2>
-          <ul className="ml-4 text-lg leading-tight">
+    <div className="flex w-full flex-col p-6 md:px-12 md:py-20">
+      <div className="mb-4 flex flex-col md:mb-10 md:flex-row">
+        <div className="mb-2 md:mb-0 md:w-1/2">
+          <h2 className="mb-1 text-3xl font-semibold md:mb-2 md:text-5xl md:font-bold">
+            Features
+          </h2>
+          <ul className="ml-4 text-sm md:text-lg md:leading-tight">
             <li className="list-disc">
               We offer premium quality green coffee beans sourced from the
               finest coffee plantations in West Java.
@@ -32,8 +34,8 @@ export default function FeaturesBenefits() {
             </li>
           </ul>
         </div>
-        <div className="flex w-1/2 justify-center">
-          <div className="image-container w-11/12">
+        <div className="flex justify-center md:w-1/2">
+          <div className="image-container w-3/4 md:h-[320px] md:w-11/12">
             <Image
               src="/green-1.jpg"
               layout="fill"
@@ -43,9 +45,9 @@ export default function FeaturesBenefits() {
           </div>
         </div>
       </div>
-      <div className="flex">
-        <div className="flex w-1/2">
-          <div className="image-container w-11/12">
+      <div className="mb-4 flex flex-col-reverse md:mb-10 md:flex-row">
+        <div className="flex justify-center md:w-1/2">
+          <div className="image-container w-3/4 md:h-[320px] md:w-11/12">
             <Image
               src="/green-2.jpg"
               layout="fill"
@@ -54,9 +56,11 @@ export default function FeaturesBenefits() {
             />
           </div>
         </div>
-        <div className="w-1/2">
-          <h2 className="mb-2 text-5xl font-bold">Benefits</h2>
-          <ul className="ml-4 text-lg leading-tight">
+        <div className="mb-2 md:mb-0 md:w-1/2">
+          <h2 className="mb-1 text-3xl font-semibold md:mb-2 md:text-5xl md:font-bold">
+            Benefits
+          </h2>
+          <ul className="ml-4 text-sm md:text-lg md:leading-tight">
             <li className="list-disc">
               Our coffee is sourced directly from West Java, ensuring high
               quality and unique flavor profiles.

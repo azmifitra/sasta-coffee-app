@@ -13,24 +13,31 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 export default function CoffeeNumbersGallery() {
   return (
     <main>
-      <div className="flex h-full w-full p-12">
-        <div className="mr-16 w-[25%] border-r-2 border-r-orange-main  pr-8">
-          <h1 className="mb-2 text-4xl font-bold">Our Coffee in Numbers</h1>
+      <div className="flex w-full flex-col items-center px-6 py-12 md:h-[420px] md:flex-row md:items-start md:p-12">
+        <div className="h-full border-r-orange-main text-sm md:mr-16 md:w-[25%] md:border-r-2 md:pr-8 md:text-base">
+          <h1 className="mb-1 text-3xl font-semibold md:mb-2 md:text-4xl md:font-bold">
+            Our Coffee in Numbers
+          </h1>
           <p>
-            <span className="font-bold">1+ Ton</span> Green Beans per Month
+            <span className="font-semibold md:font-bold">1+ Ton</span> Green
+            Beans per Month
           </p>
           <p>
-            <span className="font-bold">25</span> Workforce
+            <span className="font-semibold md:font-bold">25</span> Workforce
           </p>
           <p>
-            <span className="font-bold">300 ha</span> Coffee farm
+            <span className="font-semibold md:font-bold">300 ha</span> Coffee
+            farm
           </p>
           <p>
-            <span className="font-bold">100+</span> Satisfied customers
+            <span className="font-semibold md:font-bold">100+</span> Satisfied
+            customers
           </p>
         </div>
-        <div className="flex w-[75%] flex-col items-center">
-          <h1 className="mb-4 text-4xl font-bold">Gallery</h1>
+        <div className="mt-6 flex flex-col items-center md:mt-0 md:w-[75%]">
+          <h1 className="mb-2 text-3xl font-semibold md:mb-4 md:text-4xl md:font-bold">
+            Gallery
+          </h1>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}

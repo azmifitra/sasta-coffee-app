@@ -4,22 +4,30 @@ import { GiCoffeeBeans } from "react-icons/gi";
 
 export default function AboutUs() {
   return (
-    <div className="relative flex w-full items-center bg-orange-secondary px-12 py-24">
+    <div className="relative flex w-full flex-col-reverse items-center bg-orange-secondary p-6 md:flex-row md:px-12 md:py-24">
       <BiSolidCoffeeBean
         fontSize="54px"
         color="#FFF"
-        className="absolute left-6 top-[12%]"
+        className="absolute left-[80%] top-[2%] md:left-6 md:top-[8%]"
       />
       <GiCoffeeBeans
         fontSize="64px"
         color="#FFF"
-        className="absolute bottom-[6%] right-10"
+        className="absolute bottom-[2%] right-10 md:bottom-[6%]"
       />
 
-      <Image src="/us-hero.jpg" width={500} height={500} alt="about-us-pict" />
-      <div className="relative ml-6 text-white">
-        <h1 className="mb-2 text-6xl font-bold">About Us</h1>
-        <h3 className="text-justify text-lg leading-5">
+      <Image
+        src="/us-hero.jpg"
+        width={500}
+        height={500}
+        alt="about-us-pict"
+        className="mt-5 h-1/2 w-1/2 md:h-full md:w-full"
+      />
+      <div className="relative text-white md:ml-6">
+        <h1 className="mb-2 text-4xl font-semibold md:text-6xl md:font-bold">
+          About Us
+        </h1>
+        <h3 className="text-justify text-sm leading-tight md:text-lg md:leading-5">
           Sasta Indonesia Coffee was founded to share a passion for producing
           high-quality coffee. Our team of experienced coffee producers
           carefully selects and roasts our beans to perfection, ensuring a rich

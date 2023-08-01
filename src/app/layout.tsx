@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./swiperjs.css";
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
 import Image from "next/image";

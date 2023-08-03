@@ -65,7 +65,7 @@ export default function ContactUs() {
         id="contact"
         className="flex flex-col items-center bg-orange-50 p-6 md:p-12"
       >
-        <h1 className="mb-4 text-4xl font-bold text-orange-main">
+        <h1 className="mb-4 text-3xl font-bold text-orange-main md:text-4xl">
           Get In Touch
         </h1>
         <form

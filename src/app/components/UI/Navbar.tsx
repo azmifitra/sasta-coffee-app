@@ -18,15 +18,15 @@ export default function Navbar() {
   return (
     <nav className="shadow-1 fixed z-50 h-20 w-full bg-white shadow-lg">
       <div className="flex h-full items-center justify-between px-4 md:px-12">
-        <div className="flex cursor-pointer items-center">
+        <div
+          className="flex cursor-pointer items-center"
+          onClick={() => handleClickScroll("home")}
+        >
           <img
             src={"icons/icon-sasta-coffee.png"}
             alt="logo-sasta-coffee"
             className="h-16"
           />
-          <span className="mx-2 mt-1 text-lg font-bold text-orange-main md:mx-2 md:text-xl">
-            {/* Sasta Coffee */}
-          </span>
         </div>
         <div className="flex items-center text-sm font-medium">
           {!showDrawerSide && (

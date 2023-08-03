@@ -1,6 +1,9 @@
 export default function Header() {
   return (
-    <div className="flex min-h-[640px] w-full items-center bg-[url('assets/images/beans-hand-filter.jpg')] bg-center bg-no-repeat p-6 md:min-h-screen md:justify-end md:bg-cover md:px-12 md:py-24">
+    <div
+      id="home"
+      className="flex min-h-[640px] w-full items-center bg-[url('assets/images/beans-hand-filter.jpg')] bg-center bg-no-repeat p-6 md:min-h-screen md:justify-end md:bg-cover md:px-12 md:py-24"
+    >
       <div className="flex flex-col text-white md:w-[65%] md:items-end">
         <h1 className="mb-5 text-4xl font-semibold md:text-6xl md:font-bold">
           Indonesian Coffee

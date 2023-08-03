@@ -7,8 +7,8 @@ export default function Products() {
       <h1 className="mb-4 text-4xl font-semibold text-white md:text-6xl md:font-bold">
         Our Product
       </h1>
-      <div className="flex w-full flex-col justify-center md:flex-row">
-        <div className="mb-4 h-72 rounded-lg bg-white md:mx-10 md:mb-0 md:h-[400px] md:w-80">
+      <div className="flex w-full flex-col items-center justify-center md:flex-row">
+        <div className="mb-4 h-[340px] w-3/4 rounded-lg bg-white md:mx-10 md:mb-0 md:h-[400px] md:w-80">
           <div className="group relative h-full overflow-hidden">
             <div className="h-[40%] w-full rounded-t-lg bg-[url('assets/images/green-coffee-beans.jpg')] bg-cover bg-no-repeat"></div>
             <div className="p-2 leading-tight md:p-4">
@@ -41,7 +41,7 @@ export default function Products() {
             </div>
           </div>
         </div>
-        <div className="mb-4 h-72 rounded-lg bg-white md:mx-10 md:mb-0 md:h-[400px] md:w-80">
+        <div className="mb-4 h-[360px] w-3/4 rounded-lg bg-white md:mx-10 md:mb-0 md:h-[400px] md:w-80">
           <div className="group relative h-full overflow-hidden">
             <div className="h-[40%] w-full rounded-t-lg bg-[url('assets/images/roasted-coffee-beans.jpg')] bg-cover bg-no-repeat"></div>
             <div className="p-2 leading-tight md:p-4">

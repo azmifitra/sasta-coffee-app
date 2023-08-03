@@ -44,6 +44,7 @@ input:-webkit-autofill {
 
 .bg-products-1 {
   @apply bg-[url('assets/images/leaf-pattern-1.png')] bg-contain bg-no-repeat;
+  background-position: bottom left;
 }
 
 .bg-products-2 {

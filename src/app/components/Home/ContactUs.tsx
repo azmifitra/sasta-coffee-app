@@ -61,8 +61,13 @@ export default function ContactUs() {
 
   return (
     <main>
-      <div className="flex flex-col items-center bg-orange-50 p-6 md:p-12">
-        <h1 className="mb-4 text-4xl font-bold text-orange-main">Contact Us</h1>
+      <div
+        id="contact"
+        className="flex flex-col items-center bg-orange-50 p-6 md:p-12"
+      >
+        <h1 className="mb-4 text-4xl font-bold text-orange-main">
+          Get In Touch
+        </h1>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="mx-auto flex w-full flex-col space-y-2 md:w-fit md:px-6"

@@ -13,7 +13,7 @@ export default function Footer() {
         />
         <h5>Experience the satisfaction of enjoying Indonesian coffee.</h5>
         <p className="text-sm font-normal text-gray-400">
-          Copyright 2023 © Sasta Coffee
+          Copyright 2023 © Sasta Indonesia Coffee
         </p>
       </div>
       <div className="mt-4 text-sm md:mt-0 md:text-base">

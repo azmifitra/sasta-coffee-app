@@ -7,6 +7,13 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function Navbar() {
   const [showDrawerSide, setShowDrawerSide] = React.useState(false);
+  const handleClickScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <nav className="shadow-1 fixed z-50 h-20 w-full bg-white shadow-lg">
@@ -18,7 +25,7 @@ export default function Navbar() {
             className="h-16"
           />
           <span className="mx-2 mt-1 text-lg font-bold text-orange-main md:mx-2 md:text-xl">
-            Sasta Coffee
+            {/* Sasta Coffee */}
           </span>
         </div>
         <div className="flex items-center text-sm font-medium">
@@ -39,14 +46,34 @@ export default function Navbar() {
             />
           )}
           <div className="hidden items-center text-lg font-medium md:flex">
-            <span className="badge-navbar-1">About Us</span>
-            <span className="badge-navbar-1">Features & Benefits</span>
-            <span className="badge-navbar-1">Products</span>
-            <span className="badge-navbar-1">Contact</span>
+            <span
+              className="badge-navbar-1"
+              onClick={() => handleClickScroll("about-us")}
+            >
+              About Us
+            </span>
+            <span
+              className="badge-navbar-1"
+              onClick={() => handleClickScroll("features-benefits")}
+            >
+              Features & Benefits
+            </span>
+            <span
+              className="badge-navbar-1"
+              onClick={() => handleClickScroll("products")}
+            >
+              Products
+            </span>
+            <span
+              className="badge-navbar-1"
+              onClick={() => handleClickScroll("contact")}
+            >
+              Contact
+            </span>
           </div>
         </div>
       </div>
-      {showDrawerSide && <DrawerSide />}
+      {showDrawerSide && <DrawerSide closeDrawerSide={setShowDrawerSide} />}
     </nav>
   );
 }

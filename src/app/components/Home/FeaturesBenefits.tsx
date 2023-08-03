@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function FeaturesBenefits() {
   return (
-    <div className="flex w-full flex-col p-6 md:px-12 md:py-20">
+    <div
+      id="features-benefits"
+      className="flex w-full flex-col p-6 md:px-12 md:py-20"
+    >
       <div className="mb-4 flex flex-col md:mb-10 md:flex-row">
         <div className="mb-2 md:mb-0 md:w-1/2">
           <h2 className="mb-1 text-3xl font-semibold md:mb-2 md:text-5xl md:font-bold">
@@ -34,24 +37,24 @@ export default function FeaturesBenefits() {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center md:w-1/2">
+        <div className="flex justify-center md:w-1/2 md:justify-end">
           <div className="image-container w-3/4 md:h-[320px] md:w-11/12">
             <Image
-              src="/green-1.jpg"
+              src="/green-2.jpg"
               layout="fill"
-              className={"image"}
+              className={"image rounded-lg"}
               alt="about-us-pict"
             />
           </div>
         </div>
       </div>
       <div className="mb-4 flex flex-col-reverse md:mb-10 md:flex-row">
-        <div className="flex justify-center md:w-1/2">
+        <div className="flex justify-center md:w-1/2 md:justify-start">
           <div className="image-container w-3/4 md:h-[320px] md:w-11/12">
             <Image
-              src="/green-2.jpg"
+              src="/coffee-beans-3.jpg"
               layout="fill"
-              className={"image"}
+              className={"image rounded-lg"}
               alt="about-us-pict"
             />
           </div>

@@ -1,18 +1,21 @@
 export default function Products() {
   return (
-    <div className="flex w-full flex-col items-center bg-orange-secondary p-6 md:p-12">
+    <div
+      id="products"
+      className="bg-products-1 flex w-full flex-col items-center bg-orange-secondary p-6 md:p-12"
+    >
       <h1 className="mb-4 text-4xl font-semibold text-white md:text-6xl md:font-bold">
-        Products
+        Our Product
       </h1>
       <div className="flex w-full flex-col justify-center md:flex-row">
-        <div className="mb-4 h-72 rounded bg-white md:mx-10 md:mb-0 md:h-[400px] md:w-72">
+        <div className="mb-4 h-72 rounded-lg bg-white md:mx-10 md:mb-0 md:h-[400px] md:w-80">
           <div className="group relative h-full overflow-hidden">
-            <div className="h-[40%] w-full rounded-t bg-[url('assets/images/green-coffee-beans.jpg')] bg-cover bg-no-repeat"></div>
+            <div className="h-[40%] w-full rounded-t-lg bg-[url('assets/images/green-coffee-beans.jpg')] bg-cover bg-no-repeat"></div>
             <div className="p-2 leading-tight md:p-4">
               <h3 className="text-center text-lg font-semibold leading-tight md:text-xl">
                 Green Coffee Beans
               </h3>
-              <p className="text-justify text-sm leading-5 md:text-base md:leading-normal">
+              <p className="text-justify text-sm leading-5 md:text-base md:leading-tight">
                 Our premium green coffee beans are carefully sourced and
                 processed to deliver a rich and aromatic flavor that will
                 satisfy any coffee lover where quality and sustainability
@@ -38,14 +41,14 @@ export default function Products() {
             </div>
           </div>
         </div>
-        <div className="mb-4 h-72 rounded bg-white md:mx-10 md:mb-0 md:h-[400px] md:w-72">
+        <div className="mb-4 h-72 rounded-lg bg-white md:mx-10 md:mb-0 md:h-[400px] md:w-80">
           <div className="group relative h-full overflow-hidden">
-            <div className="h-[40%] w-full rounded-t bg-[url('assets/images/roasted-coffee-beans.jpg')] bg-cover bg-no-repeat"></div>
+            <div className="h-[40%] w-full rounded-t-lg bg-[url('assets/images/roasted-coffee-beans.jpg')] bg-cover bg-no-repeat"></div>
             <div className="p-2 leading-tight md:p-4">
               <h3 className="text-center text-lg font-semibold leading-tight md:text-xl">
                 Roasted Coffee Beans
               </h3>
-              <p className="text-justify text-sm leading-5 md:text-base md:leading-normal">
+              <p className="text-justify text-sm leading-5 md:text-base md:leading-tight">
                 Introducing our distinguished Indonesian roasted coffee beans
                 producer, where passion for coffee craftsmanship meets the
                 essence of Indonesia's rich coffee heritage. Our roasted coffee

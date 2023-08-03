@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-margin-top: 80px;
+}
+
 body {
   @apply text-black-main;
 }
@@ -36,6 +40,15 @@ input:-webkit-autofill {
   height: 100%;
   position: relative !important;
   object-fit: cover;
+}
+
+.bg-products-1 {
+  @apply bg-[url('assets/images/leaf-pattern-1.png')] bg-contain bg-no-repeat;
+}
+
+.bg-products-2 {
+  @apply bg-contain bg-no-repeat md:bg-[url('assets/images/leaf-pattern-2.png')];
+  background-position: right;
 }
 
 .shadow-footer {

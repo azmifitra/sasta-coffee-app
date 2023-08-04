@@ -15,7 +15,7 @@ export default function Products() {
               <h3 className="text-center text-lg font-semibold leading-tight md:text-xl">
                 Green Coffee Beans
               </h3>
-              <p className="text-justify text-sm leading-5 md:text-base md:leading-tight">
+              <p className="text-justify text-sm leading-6 md:text-base md:leading-tight">
                 Our premium green coffee beans are carefully sourced and
                 processed to deliver a rich and aromatic flavor that will
                 satisfy any coffee lover where quality and sustainability
@@ -48,7 +48,7 @@ export default function Products() {
               <h3 className="text-center text-lg font-semibold leading-tight md:text-xl">
                 Roasted Coffee Beans
               </h3>
-              <p className="text-justify text-sm leading-5 md:text-base md:leading-tight">
+              <p className="text-justify text-sm leading-6 md:text-base md:leading-tight">
                 Introducing our distinguished Indonesian roasted coffee beans
                 producer, where passion for coffee craftsmanship meets the
                 essence of Indonesia's rich coffee heritage. Our roasted coffee

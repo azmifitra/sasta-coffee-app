@@ -48,8 +48,8 @@ input:-webkit-autofill {
 }
 
 .bg-products-2 {
-  @apply bg-contain bg-no-repeat md:bg-[url('assets/images/leaf-pattern-2.png')];
-  background-position: right;
+  @apply bg-[url('assets/images/leaf-pattern-2-orange.png')] bg-contain bg-no-repeat;
+  background-position: bottom right;
 }
 
 .shadow-footer {

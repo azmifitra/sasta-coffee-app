@@ -30,7 +30,7 @@ export default function AboutUs() {
         <h1 className="mb-2 text-4xl font-semibold md:text-6xl md:font-bold">
           Sasta Indonesia Coffee
         </h1>
-        <h3 className="pb-2 text-justify text-sm leading-tight md:text-lg md:leading-5">
+        <h3 className="pb-2 text-justify text-sm leading-tight md:text-lg md:leading-6">
           Sasta Indonesia Coffee was founded to share a passion for producing
           high-quality coffee. Our team of experienced coffee producers
           carefully selects and roasts our beans to perfection, ensuring a rich
@@ -39,7 +39,7 @@ export default function AboutUs() {
           ensuring that our customers can enjoy their coffee with a clear
           conscience.
         </h3>
-        <h3 className="pb-2 text-justify text-sm leading-tight md:text-lg md:leading-5">
+        <h3 className="pb-2 text-justify text-sm leading-tight md:text-lg md:leading-6">
           At our core, we champion sustainability and ethical practices. By
           collaborating closely with local farming communities, we create a
           positive impact on livelihoods while safeguarding the environment and

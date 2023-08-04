@@ -4,17 +4,18 @@ import FeaturesBenefits from "./components/Home/FeaturesBenefits";
 import Products from "./components/Home/Products";
 import CoffeeNumbersGallery from "./components/Home/CoffeeNumbersGallery";
 import ContactUs from "./components/Home/ContactUs";
-// import { ThreeDots } from 'react-loader-spinner'
+import WAButton from "./components/UI/WhatsappButton";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <Header />
       <AboutUs />
       <FeaturesBenefits />
       <Products />
       <CoffeeNumbersGallery />
       <ContactUs />
+      <WAButton />
     </main>
   );
 }

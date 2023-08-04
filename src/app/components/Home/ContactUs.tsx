@@ -65,9 +65,13 @@ export default function ContactUs() {
         id="contact"
         className="flex flex-col items-center bg-orange-50 p-6 md:p-12"
       >
-        <h1 className="mb-4 text-3xl font-bold text-orange-main md:text-4xl">
+        <h1 className="mb-1 text-3xl font-bold text-orange-main md:text-4xl">
           Get In Touch
         </h1>
+        <p className="mb-4 text-center text-sm leading-tight text-orange-main md:text-lg md:leading-6">
+          We provide our Coffee Beans in small and bulk quantity. <br /> Looking
+          forward to collaborating with you!
+        </p>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="mx-auto flex w-full flex-col space-y-2 md:w-fit md:px-6"

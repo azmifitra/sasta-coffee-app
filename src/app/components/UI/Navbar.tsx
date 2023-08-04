@@ -45,7 +45,7 @@ export default function Navbar() {
               onClick={() => setShowDrawerSide(false)}
             />
           )}
-          <div className="hidden items-center text-lg font-medium md:flex">
+          <div className="hidden items-center text-xl font-medium md:flex">
             <span
               className="badge-navbar-1"
               onClick={() => handleClickScroll("about-us")}

@@ -40,8 +40,8 @@ const dataCoffeeNumbers: any = [
 export default function CoffeeNumbersGallery() {
   return (
     <main>
-      <div className="w-full items-center p-6 text-orange-main md:items-start md:px-6 md:py-12 ">
-        <div className="mb-4 flex flex-col items-center text-sm md:mb-8 md:text-base">
+      <div className="w-full items-center text-orange-main md:items-start">
+        <div className="mb-4 flex flex-col items-center p-6 text-sm md:mb-8 md:px-6 md:py-12 md:text-base">
           <h1 className="mb-0 text-3xl font-semibold md:mb-2 md:text-4xl md:font-bold">
             Our Coffee in Numbers
           </h1>
@@ -69,8 +69,8 @@ export default function CoffeeNumbersGallery() {
             ))}
           </div>
         </div>
-        <div className="mt-6 flex flex-col items-center md:mt-0">
-          <h1 className="mb-2 text-3xl font-semibold md:mb-4 md:text-4xl md:font-bold">
+        <div className="mt-6 flex flex-col items-center bg-orange-main p-6 md:mt-0 md:px-6 md:py-12">
+          <h1 className="mb-2 text-3xl font-semibold text-white md:mb-4 md:text-4xl md:font-bold">
             Gallery
           </h1>
           <Swiper

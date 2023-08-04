@@ -4,7 +4,7 @@ export default function FeaturesBenefits() {
   return (
     <div
       id="features-benefits"
-      className="flex w-full flex-col p-6 md:px-12 md:py-20"
+      className="bg-products-2 flex w-full flex-col p-6 md:px-12 md:py-20"
     >
       <div className="mb-4 flex flex-col md:mb-10 md:flex-row">
         <div className="mb-2 md:mb-0 md:w-1/2">

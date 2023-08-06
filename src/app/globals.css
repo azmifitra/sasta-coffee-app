@@ -26,6 +26,15 @@ body {
   @apply flex h-11 flex-shrink-0 items-center justify-center rounded-md bg-orange-main py-2 text-lg font-medium text-white hover:opacity-80 disabled:cursor-not-allowed disabled:bg-[#cccccc] disabled:font-normal disabled:text-[#666666] disabled:opacity-30;
 }
 
+.modalbgdefault {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-gray-600 bg-opacity-50;
+}
+
+.modaldefault {
+  @apply relative flex flex-col items-center overflow-auto rounded-lg bg-white shadow-md;
+  max-height: 95%;
+}
+
 input:-webkit-autofill {
   background-color: transparent !important;
   -webkit-box-shadow: 0 0 0 50px white inset;

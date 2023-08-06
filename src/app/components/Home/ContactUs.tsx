@@ -5,8 +5,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { ThreeDots } from "react-loader-spinner";
 
-// import SuccessEmailModal from './modals/SuccessEmailModal'
-// import ErrorModal from './modals/ErrorModal'
+import SuccessEmailModal from "../modals/SuccessEmailModal";
+import ErrorModal from "../modals/ErrorModal";
 
 type Inputs = {
   name: string;
@@ -19,6 +19,7 @@ export default function ContactUs() {
   const [successSentEmail, setSuccessSentEmail] = useState(false);
   const [errorSentEmail, setErrorSentEmail] = useState(false);
   const [isLoadingEmail, setIsLoadingEmail] = useState(false);
+
   const { register, watch, reset, handleSubmit } = useForm<Inputs>();
   const name = watch("name", "");
   const email = watch("email", "");
@@ -31,32 +32,31 @@ export default function ContactUs() {
     subject,
     message,
   }) => {
-    setIsLoadingEmail(true);
-    // emailjs
-    //   .send(
-    //     process.env.NEXT_PUBLIC_EMAIL_SERVICE,
-    //     process.env.NEXT_PUBLIC_EMAIL_TEMPLATE,
-    //     {
-    //       name,
-    //       email,
-    //       subject,
-    //       message,
-    //     },
-    //     process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY
-    //   )
-    //   .then(
-    //     (result) => {
-    //       setIsLoadingEmail(false)
-    //       setSuccessSentEmail(true)
-    //       reset()
-    //       console.log('Success Sent Email!', result.text)
-    //     },
-    //     (error) => {
-    //       setIsLoadingEmail(false)
-    //       setErrorSentEmail(true)
-    //       console.log('Error Sent Email!', error.text)
-    //     }
-    //   )
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE as string,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE as string,
+        {
+          name,
+          email,
+          subject,
+          message,
+        },
+        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY as string,
+      )
+      .then(
+        (result) => {
+          setIsLoadingEmail(false);
+          setSuccessSentEmail(true);
+          reset();
+          console.log("Success Sent Email!", result.text);
+        },
+        (error) => {
+          setIsLoadingEmail(false);
+          setErrorSentEmail(true);
+          console.log("Error Sent Email!", error.text);
+        },
+      );
   };
 
   return (
@@ -132,6 +132,10 @@ export default function ContactUs() {
           </button>
         </form>
       </div>
+      {successSentEmail && (
+        <SuccessEmailModal setSuccessSentEmail={setSuccessSentEmail} />
+      )}
+      {errorSentEmail && <ErrorModal setErrorSentEmail={setErrorSentEmail} />}
     </main>
   );
 }

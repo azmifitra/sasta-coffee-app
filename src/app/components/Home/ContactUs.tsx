@@ -5,8 +5,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { ThreeDots } from "react-loader-spinner";
 
-import SuccessEmailModal from "../modals/SuccessEmailModal";
-import ErrorModal from "../modals/ErrorModal";
+import SuccessEmailModal from "../Modals/SuccessEmailModal";
+import ErrorModal from "../Modals/ErrorModal";
 
 type Inputs = {
   name: string;
